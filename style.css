@@ -1,3 +1,24 @@
+.header {
+    display: flex;
+    color: white;
+    background: radial-gradient(circle, rgba(0,1,68,1) 0%, rgba(160,164,170,1) 100%);
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+}
+.header ol {
+    font-size: 18px;
+    color: #e5e7eb;
+    display: flex;
+    gap: 28px;
+     
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
 .APOD {
     display: flex;
     justify-content: center;
