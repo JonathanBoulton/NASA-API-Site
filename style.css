@@ -1,6 +1,7 @@
-*{
-    color: #e5e7eb;
-}
+a:link {
+    color: white;
+} 
+
 .header {
     display: flex;
     color: white;
@@ -27,4 +28,5 @@
 .APOD {
     display: flex;
     justify-content: center;
+    color: #1f2937;
 }
