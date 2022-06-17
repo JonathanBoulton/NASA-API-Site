@@ -41,4 +41,19 @@ a:link {
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+}
+.search-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+}
+#sImage {
+    height: 400px;
+    width: 600px;
+}
+.next-image {
+    height: 100px;
+    width: 100px;
 }
