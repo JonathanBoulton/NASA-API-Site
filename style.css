@@ -1,12 +1,16 @@
+*{
+    color: #e5e7eb;
+}
 .header {
     display: flex;
     color: white;
-    background: radial-gradient(circle, rgba(0,1,68,1) 0%, rgba(160,164,170,1) 100%);
+    background-color: #1f2937;
     align-items: center;
     padding: 8px;
     justify-content: space-between;
-    text-col
+    
 }
+
 .header ol {
     font-size: 18px;
     color: #e5e7eb;
