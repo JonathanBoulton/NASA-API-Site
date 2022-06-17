@@ -21,6 +21,14 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 
 // NASA image search feature including query search bar, search button, and 'next' button
 let inum = 0 
+document
+  .querySelector('.next-image')
+  .addEventListener('click', function(){
+    inum++
+    imageSearch.search();
+    return inum;
+  }
+)
 const sImage = document.getElementById('sImage');
 const imageSearch = {
   fetchImage: function (input) {
@@ -39,3 +47,4 @@ document
   .addEventListener('click', function (){
     imageSearch.search();
   })
+
