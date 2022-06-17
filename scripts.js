@@ -46,5 +46,6 @@ document
   .querySelector('.search-button')
   .addEventListener('click', function (){
     imageSearch.search();
+    let inum = 0
   })
 
