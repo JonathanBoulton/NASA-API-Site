@@ -11,7 +11,7 @@ function myFunction() {
 }
 // Astrology picture of the day 
 const APOD = document.getElementById('APOD');
-fetch('https://api.nasa.gov/planetary/apod?api_key=Q16WKNVz9PgTSPrqI3kuQ7uc5hwQ0Rpvy5tNE1Ot')
+fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
   .then(function(response) {
     return response.json();
   })
@@ -39,7 +39,10 @@ const imageSearch = {
   + input
   + '&media_type=image')
   .then((data) => data.json())
-  .then((info) => sImage.src = info.collection.items[inum].links[0].href);
+  .then((info) => {
+  sImage.src = info.collection.items[inum].links[0].href
+  document.querySelector('.isearch-title').innerText = info.collection.items[inum].data[0].title
+  });
   },
   search: function () {
     this.fetchImage(document.querySelector('.search-bar').value)
