@@ -45,7 +45,7 @@ const imageSearch = {
 document
   .querySelector('.search-button')
   .addEventListener('click', function (){
+    inum = 0
     imageSearch.search();
-    let inum = 0
   })
 
