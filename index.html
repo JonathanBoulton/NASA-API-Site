@@ -12,18 +12,27 @@
         <div class="headerlogo">NASA API Dump</div>
             <ol>
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#apod">APOD</a></li>
-                
+                <li><a href="#icaros">Image Search</a></li>                  
             </ol>
     </div>
     <div id="hero">
         <p>This site is a collection of pictures and information fetched from NASA's public APIs</p>
+        <div class="APOD">
+            <h1>Astronomy Picture of the Day</h1>
+            <div><img id="APOD" src="#"></div>
+        </div>
+    </div> 
+    <div id="isearch">
+        <div class="search">
+            <input type="text" class="search-bar">
+            <button class="search-button"></button>
+        </div>
+        <div class="search-image">
+            <img src="#">
+            <button class="next-image"></button>
+        </div>  
+        <div id="isearch-title"></div>
     </div>
-    <div class="APOD">
-        <h1>Astronomy Picture of the Day</h1>
-    </div>
-    <img src="#">
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script> 
 </body>
 </html>

@@ -8,11 +8,11 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-const img = document.querySelector('img');
+const APOD = document.getElementById('APOD');
 fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
   .then(function(response) {
     return response.json();
   })
   .then(function(response) {
-    img.src = response.url;
+    APOD.src = response.url;
   });

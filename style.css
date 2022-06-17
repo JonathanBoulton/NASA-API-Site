@@ -24,9 +24,21 @@ a:link {
     top: 0;
     width: 100%
 }
-
-.APOD {
+#hero {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.APOD {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: #1f2937;
+}
+#isearch {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
