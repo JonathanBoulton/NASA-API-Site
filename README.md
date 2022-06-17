@@ -1,4 +1,4 @@
-# NASA-API-Sited
+# NASA-API-Site
 
 This is a site I made using NASA's public APIs. Specifically I used the APOD (astronomy picture of the day) and the NASA image 
 library. 
