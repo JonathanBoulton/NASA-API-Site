@@ -11,12 +11,15 @@ function myFunction() {
 }
 // Astrology picture of the day 
 const APOD = document.getElementById('APOD');
-fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+fetch('https://api.nasa.gov/planetary/apod?api_key=Q16WKNVz9PgTSPrqI3kuQ7uc5hwQ0Rpvy5tNE1Ot')
   .then(function(response) {
     return response.json();
   })
   .then(function(response) {
     APOD.src = response.url;
+    document.querySelector('.apodTitle').innerText = response.title
+    document.querySelector('.apodCopyright').innerText = response.copyright
+    document.querySelector('.apodExplanation').innerText = response.explanation
   });
 
 // NASA image search feature including query search bar, search button, and 'next' button

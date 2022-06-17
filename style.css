@@ -29,19 +29,19 @@ a:link {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 .APOD {
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #1f2937;
+    gap: 15px;
 }
 #isearch {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    gap: 15px;
 }
 .search-image {
     display: flex;
