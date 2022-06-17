@@ -1,3 +1,4 @@
+//Sticky header functionality
 window.onscroll = function() {myFunction()};
 let header = document.getElementById("myHeader");
 let sticky = header.offsetTop;
@@ -8,6 +9,7 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+// Astrology picture of the day 
 const APOD = document.getElementById('APOD');
 fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
   .then(function(response) {
@@ -17,6 +19,7 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     APOD.src = response.url;
   });
 
+// NASA image search feature including query search bar, search button, and 'next' button
 let inum = 0 
 const sImage = document.getElementById('sImage');
 const imageSearch = {
