@@ -16,3 +16,23 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
   .then(function(response) {
     APOD.src = response.url;
   });
+
+let inum = 0 
+const sImage = document.getElementById('sImage');
+const imageSearch = {
+  fetchImage: function (input) {
+  fetch('https://images-api.nasa.gov/search?q='
+  + input
+  + '&media_type=image')
+  .then((data) => data.json())
+  .then((info) => sImage.src = info.collection.items[inum].links[0].href);
+  },
+  search: function () {
+    this.fetchImage(document.querySelector('.search-bar').value)
+  }
+};
+document
+  .querySelector('.search-button')
+  .addEventListener('click', function (){
+    imageSearch.search();
+  })
